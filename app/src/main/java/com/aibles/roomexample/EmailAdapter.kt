@@ -10,7 +10,7 @@ import com.aibles.roomexample.entity.Email
 class EmailAdapter(
     private val lifecycleOwner: LifecycleOwner
 ): RecyclerView.Adapter<EmailAdapter.EmailViewHolder>() {
-    val emailList = listOf(Email("a", "This is spam mail"))
+    val emailList = mutableListOf(Email("a", "This is spam mail"), Email("Giang beo", "asdfnojkasdfio"))
 
     class EmailViewHolder(
         private val binding: ItemEmailBinding,
