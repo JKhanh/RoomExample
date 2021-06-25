@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RoomExample</string>
+    <string name="app_title">Demo Email List in DB</string>
 </resources>

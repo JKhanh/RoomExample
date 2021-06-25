@@ -12,14 +12,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="8dp">
+        android:paddingHorizontal="@dimen/medium_gap"
+        android:paddingVertical="@dimen/small_gap">
 
         <TextView
             android:id="@+id/text_receiver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32sp"
+            android:textSize="@dimen/app_title_text"
             android:text="@{email.receiver}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -29,9 +29,9 @@
             android:id="@+id/text_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
+            android:textSize="@dimen/content_text"
             android:text="@{email.content}"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/small_gap"
             app:layout_constraintTop_toBottomOf="@id/text_receiver"
             app:layout_constraintStart_toStartOf="@id/text_receiver"
             tools:text="A content of a mail" />
