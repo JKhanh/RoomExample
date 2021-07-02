@@ -7,16 +7,16 @@ import com.aibles.roomexample.entity.Email
 @Dao
 interface EmailDao {
     @Insert
-    fun addEmail(email: Email)
+    suspend fun addEmail(email: Email)
 
     @Insert
-    fun addEmail(emails: List<Email>)
+    suspend fun addEmail(emails: List<Email>)
 
     @Update
-    fun updateEmail(email: Email)
+    suspend fun updateEmail(email: Email)
 
     @Delete
-    fun deleteEmail(email: Email)
+    suspend fun deleteEmail(email: Email)
 
     @Query("SELECT * FROM email")
     fun getAllEmail(): LiveData<List<Email>>

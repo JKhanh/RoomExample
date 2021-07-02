@@ -7,7 +7,7 @@ import com.aibles.roomexample.local.EmailDatabase
 class EmailRepository(application: Application) {
     val database = EmailDatabase.getInstance(application)
 
-    fun insertEmail(email: Email){
+    suspend fun insertEmail(email: Email){
         database.emailDao().addEmail(email)
     }
 
